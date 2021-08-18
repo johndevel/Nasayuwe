@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/colores/dragdrop.css">
+    <link rel="stylesheet" href="../../assets/css/animals/memory.css">
     <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
 </head>
 <body>
@@ -47,6 +48,23 @@
                 <div class="droppable" data-draggable-id="naranja"><span>Lem</span></div>
             </div>            
         </section>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Sorprendente has ganado..! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <img src="../../assets/images/modules/congratulation.png" alt="">
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+        
         <!-- <input type="text" id="count"/> -->
         <audio class="negro" preload="auto"><source src="../../assets/audio/colores/negro.mp3" type="audio/mp3"></audio>
         <audio class="rojo" preload="auto"><source src="../../assets/audio/colores/rojo.mp3" type="audio/mp3"></audio>

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/css/familia/dragdrop.css">
+    <link rel="stylesheet" href="../../assets/css/animals/memory.css">
     <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
 </head>
 <body>
@@ -31,16 +32,33 @@
         </section>
         <section class="droppable-elements">
             <div class="row">
+                <div class="droppable" data-draggable-id="primos"><span>Puukakhe dyaak</span></div>
                 <div class="droppable" data-draggable-id="abuela"><span>Maluula</span></div>
+                <div class="droppable" data-draggable-id="hija"><span>Nxiisa</span></div>
                 <div class="droppable" data-draggable-id="abuelo"><span>Taluul</span></div>
                 <div class="droppable" data-draggable-id="mama"><span>Mama</span></div>
-                <div class="droppable" data-draggable-id="papa"><span>Tata</span></div>
-                <div class="droppable" data-draggable-id="hija"><span>Nxiisa</span></div>
                 <div class="droppable" data-draggable-id="hijo"><span>Zxikh</span></div>
-                <div class="droppable" data-draggable-id="primos"><span>Puukakhe dyaak</span></div>
-           
+                <div class="droppable" data-draggable-id="papa"><span>Tata</span></div>
+                
             </div>            
         </section>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Sorprendente has ganado..! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <img src="../../assets/images/modules/congratulation.png" alt="">
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+
         <!-- <input type="text" id="count"/> -->
         <audio class="abuela" preload="auto"><source src="../../assets/audio/familia/abuela.mp3" type="audio/mp3"></audio>
         <audio class="abuelo" preload="auto"><source src="../../assets/audio/familia/abuelo.mp3" type="audio/mp3"></audio>

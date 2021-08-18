@@ -1,4 +1,18 @@
+let modal = document.getElementById("popup1");
+// @desciption for user to play Again 
+function playAgain(){
+  modal.classList.remove("show");
+  // startGame();
+  location.reload();
+}
+
 document.onreadystatechange = () => {
+  // declare modal
+  let modal = document.getElementById("popup1");
+  // close icon in modal
+  let closeicon = document.querySelector(".close");
+  
+
   if (document.readyState === 'complete') {
     // document ready reset sessionCount
     resetCount();
@@ -63,11 +77,23 @@ document.onreadystatechange = () => {
                 const win = document.querySelector(".win");
                 win.play();
                 resetCount();
+                // show congratulations modal
+                modal.classList.add("show");
+
+                //closeicon on modal
+                closeModal();
             }
         } else {
             sessionStorage.count = 1;
         }
         // document.getElementById("count").value = sessionStorage.count + "  Wins";
+    }
+
+    function closeModal(){
+      closeicon.addEventListener("click", function(e){
+          modal.classList.remove("show");
+          // startGame();
+      });
     }
 
     function resetCount() {
