@@ -24,9 +24,9 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
-/* h1 {
-	font-family: 'Gloria Hallelujah', cursive;
-} */
+h1 {
+	text-align: center;
+}
 .container .btn-post {
 	display: flex;
 	align-items: center;
@@ -148,6 +148,9 @@ body {
 }
 .fa-star {
 	color: #FFD700;
+}
+.content {
+	display: inline-block;
 }
 .timer {
 	display: inline-block;
@@ -390,6 +393,10 @@ body {
 	}
 	.popup {
 		width: 62%;
+	}
+	.content {
+		display: flex;
+		justify-content: center;
 	}
 }
 /* For Tablets

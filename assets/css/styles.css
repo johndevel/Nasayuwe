@@ -305,7 +305,7 @@ main.type {
     width: 340px;
     height: 340px;
     border-radius: 100%;
-    margin: 20px 20px 80px;
+    margin: 50px 20px 80px;
     padding: 15px;
     box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.08);
     -webkit-border-radius: 100%;
@@ -457,6 +457,9 @@ main.type {
     } */
     .divider-custom .divider-custom-line {
         max-width: 4.7rem;
+    }
+    .modules .title .title_text h3 {
+        font-size: 1.4rem;
     }
 }
 @media (max-width: 579.5px) {
