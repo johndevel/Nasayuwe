@@ -17,16 +17,15 @@ window.addEventListener('load', () => {
 			evento.target.classList.add('activo');
 
 			const categoria = evento.target.innerHTML.toLowerCase();
-			console.log(categoria);
 			categoria === 'todo' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
 		});
 	});
 
 	// Agregamos el listener para la barra de busqueda
-	document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
-		const busqueda = evento.target.value;
-		grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
-	});
+	// document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
+	// 	const busqueda = evento.target.value;
+	// 	grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
+	// });
 
 	// Agregamos listener para las imagenes
 	const overlay = document.getElementById('overlay');
@@ -42,12 +41,12 @@ window.addEventListener('load', () => {
 	});
 
 	// Eventlistener del boton de cerrar
-	document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
-		overlay.classList.remove('activo');
-	});
+	// document.querySelector('#btn-cerrar-popup').addEventListener('click', () => {
+	// 	overlay.classList.remove('activo');
+	// });
 
 	// Eventlistener del overlay
-	overlay.addEventListener('click', (evento) => {
-		evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
-	});
+	// overlay.addEventListener('click', (evento) => {
+	// 	evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
+	// });
 });
