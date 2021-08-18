@@ -9,26 +9,26 @@ body {
 =                 Containar Section                 =
 ===================================================*/
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .container {
 	max-width: 1200px;
 	margin: auto;
 }
 .container .entorno {
-    overflow: hidden;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
 }
 .container .entorno h1 {
   font-size: 3rem;
-    text-align: center;
-    margin: 2rem 0 3rem;
+  text-align: center;
+  margin: 2rem 0 3rem;
 }
 .container .entorno .btn-post {
   display: flex;
@@ -69,14 +69,13 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-size: 4rem;
     font-weight: bold;
     background-color: #fff;
     border: 3px dashed #111;
     transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
   }
   .droppable span {
-    font-size: 2.25rem;
+    font-size: 2rem;
     pointer-events: none; /* The element is never the target of pointer events */
   }
 
@@ -177,3 +176,13 @@ body {
 }
 
 /*========    End of Container Section    =========*/
+
+@media (max-width: 500px) {
+  .droppable {
+    height: 8rem;
+    width: 8rem;
+  }
+  .droppable span {
+    font-size: 1.5rem;
+  }
+}
