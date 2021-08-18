@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/numbers/memory.css">
+</head>
+<body>
+	<div class="container">
+        <header>
+            <h1>Juego de Memoria - Ew Jii Pwesanxi</h1>
+        </header>
+        <div class="btn-post mb">
+            <a href="../../pages/numbers/index.html"><big><big>Atras  <br>E'su</big></big> <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Movimiento(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-redo"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="one">
+                <img src="../../assets/images/modules/numbers/memory/one1300x1300.png" alt="">
+            </li>
+			<li class="card" type="one">
+                <h4>Teeçx</h4>
+            </li>
+			<li class="card" type="two">
+                <img src="../../assets/images/modules/numbers/memory/two1300x1300.png" alt="">
+            </li>
+			<li class="card" type="two">
+                <h4>E’z</h4>
+            </li>
+            <li class="card" type="three">
+                <img src="../../assets/images/modules/numbers/memory/three1300x1300.png" alt="">
+            </li>
+			<li class="card" type="three">
+                <h4>Tekh</h4>
+            </li>
+			<li class="card" type="four">
+                <img src="../../assets/images/modules/numbers/memory/four1300x1300.png" alt="">
+            </li>
+			<li class="card" type="four">
+                <h4>Pahz</h4>
+            </li>
+			<li class="card" type="five">
+                <img src="../../assets/images/modules/numbers/memory/five1300x1300.png" alt="">
+            </li>
+			<li class="card" type="five">
+                <h4>Tahç</h4>
+            </li>
+		<!--	<li class="card" type="six">
+                <img src="../../assets/images/modules/numbers/memory/six1300x1300.png" alt="">
+            </li>
+			<li class="card" type="six">
+                <h4>Six</h4>
+            </li>
+			<li class="card" type="seven">
+                <img src="../../assets/images/modules/numbers/memory/seven1300x1300.png" alt="">
+            </li>
+			<li class="card" type="seven">
+                <h4>Seven</h4>
+            </li>
+			<li class="card" type="eight">
+                <img src="../../assets/images/modules/numbers/memory/eight1300x1300.png" alt="">
+            </li>
+			<li class="card" type="eight">
+                <h4>Eight</h4>
+            </li>
+			<li class="card" type="nine">
+                <img src="../../assets/images/modules/numbers/memory/nine1300x1300.png" alt="">
+            </li>
+			<li class="card" type="nine">
+                <h4>Nine</h4>
+            </li>
+			<li class="card" type="ten">
+                <img src="../../assets/images/modules/numbers/memory/ten1300x1300.png" alt="">
+            </li>
+			<li class="card" type="ten">
+                <h4>Ten</h4>
+            </li>-->
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Felicidades.. Ganaste..! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>Hizo <span id=finalMove> </span> movimientos </p>
+                    <p>en <span id=totalTime> </span> </p>
+                    <p>Clasificación:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de Nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <audio class="one" preload="auto"><source src="../../assets/audio/numbers/uno.mp3" type="audio/mp3"></audio>
+    <audio class="two" preload="auto"><source src="../../assets/audio/numbers/dos.mp3" type="audio/mp3"></audio>
+    <audio class="three" preload="auto"><source src="../../assets/audio/numbers/tres.mp3" type="audio/mp3"></audio>
+    <audio class="four" preload="auto"><source src="../../assets/audio/numbers/cuatro.mp3" type="audio/mp3"></audio>
+    <audio class="five" preload="auto"><source src="../../assets/audio/numbers/cinco.mp3" type="audio/mp3"></audio>
+    <audio class="six" preload="auto"><source src="../../assets/audio/numbers/six.mp3" type="audio/mp3"></audio>
+    <audio class="seven" preload="auto"><source src="../../assets/audio/numbers/seven.mp3" type="audio/mp3"></audio>
+    <audio class="eight" preload="auto"><source src="../../assets/audio/numbers/eight.mp3" type="audio/mp3"></audio>
+    <audio class="nine" preload="auto"><source src="../../assets/audio/numbers/nine.mp3" type="audio/mp3"></audio>
+    <audio class="ten" preload="auto"><source src="../../assets/audio/numbers/ten.mp3" type="audio/mp3"></audio>
+
+	
+    <audio class="wrong" preload="auto"><source src="../../assets/audio/wrong.mp3" type="audio/mp3"></audio>
+
+    <script src="../../assets/js/numbers/memory.js"></script>
+
+</body>
+</html>

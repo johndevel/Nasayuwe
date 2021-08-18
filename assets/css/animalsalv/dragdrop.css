@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	background-image: url('../../images/picture-background.svg');
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===================================================
+=                 Containar Section                 =
+===================================================*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+.container .entorno {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.container .entorno h1 {
+  font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+.container .entorno .btn-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.container .entorno .btn-post a {
+  color: var(--text-color-two);
+  text-decoration: none;
+}
+.draggable-elements {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .draggable {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+  }
+  .draggable:hover {
+    opacity: 0.5;
+  }
+  .droppable {
+    height: 9rem;
+    width: 9rem;
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+  }
+  .droppable span {
+    font-size: 2.25rem;
+    pointer-events: none; /* The element is never the target of pointer events */
+  }
+
+#aguila {
+    background-image: url('../../images/modules/animalsalv/dragdrop/aguila80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ardilla {
+    background-image: url('../../images/modules/animalsalv/dragdrop/ardilla80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#armadillo {
+    background-image: url('../../images/modules/animalsalv/dragdrop/armadillo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#borugo {
+    background-image: url('../../images/modules/animalsalv/dragdrop/borugo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cosumbo {
+    background-image: url('../../images/modules/animalsalv/dragdrop/cosumbo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#culebra {
+    background-image: url('../../images/modules/animalsalv/dragdrop/culebra80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#guatin {
+    background-image: url('../../images/modules/animalsalv/dragdrop/guatin80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#oso {
+    background-image: url('../../images/modules/animalsalv/dragdrop/oso80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pez {
+    background-image: url('../../images/modules/animalsalv/dragdrop/pez80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#venado {
+    background-image: url('../../images/modules/animalsalv/dragdrop/venado80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+  
+  /* Drag and Drop Related Styling */
+  
+  .droppable.droppable-hover {
+    /* background-color: #bee3f0; */
+    border-width: 5px;
+    transform: scale(1.1);
+  }
+  .droppable.dropped {
+    border-style: solid;
+    color: #fff;
+  }
+  .droppable.dropped span {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+  .droppable.dropped i {
+    pointer-events: none;
+  }
+  .draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+  }
+  .draggable.dragged:hover {
+    opacity: 0.1;
+  }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button #reload {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #64CD32;
+}
+/*========    End of Container Section    =========*/

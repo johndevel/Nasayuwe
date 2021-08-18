@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/animals/memory.css">
+</head>
+<body>
+	<div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+        <div class="btn-post mb">
+            <a href="../../pages/animals/index.html">Volver <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-redo"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="perro">
+                <img src="../../assets/images/modules/animals/perro.png" alt="">
+            </li>
+			<li class="card" type="perro">
+                <h4>Alku</h4>
+            </li>
+			<li class="card" type="cerdo">
+                <img src="../../assets/images/modules/animals/cerdo.png" alt="">
+            </li>
+			<li class="card" type="cerdo">
+                <h4>Kuçxi</h4>
+            </li>
+            <li class="card" type="caballo">
+                <img src="../../assets/images/modules/animals/caballo.png" alt="">
+            </li>
+			<li class="card" type="caballo">
+                <h4>Jiba</h4>
+            </li>
+			<li class="card" type="gato">
+                <img src="../../assets/images/modules/animals/gato.png" alt="">
+            </li>
+			<li class="card" type="gato">
+                <h4>Misx</h4>
+            </li>
+			<li class="card" type="vaca">
+                <img src="../../assets/images/modules/animals/vaca.png" alt="">
+            </li>
+			<li class="card" type="vaca">
+                <h4>Klaa U’y</h4>
+            </li>
+			<li class="card" type="toro">
+                <img src="../../assets/images/modules/animals/toro.png" alt="">
+            </li>
+			<li class="card" type="toro">
+                <h4>Klaa Piçthẽ</h4>
+            </li>
+			<li class="card" type="gallina">
+                <img src="../../assets/images/modules/animals/gallina.png" alt="">
+            </li>
+			<li class="card" type="gallina">
+                <h4>Atalx U’y</h4>
+            </li>
+			<li class="card" type="gallo">
+                <img src="../../assets/images/modules/animals/gallo.png" alt="">
+            </li>
+			<li class="card" type="gallo">
+                <h4>Atalx Pihç</h4>
+            </li>
+            <li class="card" type="pato">
+                <img src="../../assets/images/modules/animals/pato.png" alt="">
+            </li>
+            <li class="card" type="pato">
+                <h4>Yu’ẽs</h4>
+            </li>
+            <li class="card" type="cuy">
+                <img src="../../assets/images/modules/animals/cuy.png" alt="">
+            </li>
+            <li class="card" type="cuy">
+                <h4>Fxiç</h4>
+            </li>
+            <li class="card" type="conejo">
+                <img src="../../assets/images/modules/animals/conejo.png" alt="">
+            </li>
+            <li class="card" type="conejo">
+                <h4>Kahpx</h4>
+            </li>
+            <li class="card" type="paloma">
+                <img src="../../assets/images/modules/animals/paloma.png" alt="">
+            </li>
+            <li class="card" type="paloma">
+                <h4>Tub</h4>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Congratulations you're a winner 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again 😄</a>
+                </button>
+            </div>
+        </div>
+    </div>
+	<audio class="perro" preload="auto"><source src="../../assets/audio/animals/perro.mp3" type="audio/mp3"></audio>
+	<audio class="cerdo" preload="auto"><source src="../../assets/audio/animals/cerdo.mp3" type="audio/mp3"></audio>
+	<audio class="caballo" preload="auto"><source src="../../assets/audio/animals/caballo.mp3" type="audio/mp3"></audio>
+	<audio class="gato" preload="auto"><source src="../../assets/audio/animals/gato.mp3" type="audio/mp3"></audio>
+	<audio class="vaca" preload="auto"><source src="../../assets/audio/animals/vaca.mp3" type="audio/mp3"></audio>
+	<audio class="toro" preload="auto"><source src="../../assets/audio/animals/toro.mp3" type="audio/mp3"></audio>
+	<audio class="gallina" preload="auto"><source src="../../assets/audio/animals/gallina.mp3" type="audio/mp3"></audio>
+	<audio class="gallo" preload="auto"><source src="../../assets/audio/animals/gallo.mp3" type="audio/mp3"></audio>
+    <audio class="pato" preload="auto"><source src="../../assets/audio/animals/pato.mp3" type="audio/mp3"></audio>
+    <audio class="cuy" preload="auto"><source src="../../assets/audio/animals/cuy.mp3" type="audio/mp3"></audio>
+    <audio class="conejo" preload="auto"><source src="../../assets/audio/animals/conejo.mp3" type="audio/mp3"></audio>
+    <audio class="paloma" preload="auto"><source src="../../assets/audio/animals/paloma.mp3" type="audio/mp3"></audio>
+
+
+
+
+
+	<audio class="wrong" preload="auto"><source src="../../assets/audio/wrong.mp3" type="audio/mp3"></audio>
+
+    <script src="../../assets/js/animals/memory.js"></script>
+</body>
+</html>

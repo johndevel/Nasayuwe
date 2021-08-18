@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/colores/memory.css">
+</head>
+<body>
+	<div class="container">
+        <header>
+            <h1>Juego de Memoria - Ew Jii Pwesanxi</h1>
+        </header>
+        <div class="btn-post mb">
+            <a href="../../pages/colores/index.html"><big><big>Atras  <br>E'su</big></big><i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> movimiento(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-redo"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="negro">
+                <img src="../../assets/images/modules/colores/negro.png" alt="">
+            </li>
+			<li class="card" type="negro">
+                <h4>Khũçx</h4>
+            </li>
+			<li class="card" type="rojo">
+                <img src="../../assets/images/modules/colores/rojo.png" alt="">
+            </li>
+			<li class="card" type="rojo">
+                <h4>Beh</h4>
+            </li>
+            <li class="card" type="blanco">
+                <img src="../../assets/images/modules/colores/blanco.png" alt="">
+            </li>
+			<li class="card" type="blanco">
+                <h4>Çxihme</h4>
+            </li>
+			<li class="card" type="amarillo">
+                <img src="../../assets/images/modules/colores/amarillo.png" alt="">
+            </li>
+			<li class="card" type="amarillo">
+                <h4>Çxkiitx</h4>
+            </li>
+			<li class="card" type="verde">
+                <img src="../../assets/images/modules/colores/verde.png" alt="">
+            </li>
+			<li class="card" type="verde">
+                <h4>Çenx</h4>
+            </li>
+			<li class="card" type="azul">
+                <img src="../../assets/images/modules/colores/azul.png" alt="">
+            </li>
+			<li class="card" type="azul">
+                <h4>Ẽeçenx</h4>
+            </li>
+			<li class="card" type="morado">
+                <img src="../../assets/images/modules/colores/morado.png" alt="">
+            </li>
+			<li class="card" type="morado">
+                <h4>Ka'ka kite</h4>
+            </li>
+			<li class="card" type="cafe">
+                <img src="../../assets/images/modules/colores/cafe.png" alt="">
+            </li>
+			<li class="card" type="cafe">
+                <h4>Sxuma</h4>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Felicidades.. Ganaste..! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>Hizo <span id=finalMove> </span> movimientos </p>
+                    <p>en <span id=totalTime> </span> </p>
+                    <p>Clasificación:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+    </div>
+	<audio class="negro" preload="auto"><source src="../../assets/audio/colores/negro.mp3" type="audio/mp3"></audio>
+	<audio class="rojo" preload="auto"><source src="../../assets/audio/colores/rojo.mp3" type="audio/mp3"></audio>
+	<audio class="blanco" preload="auto"><source src="../../assets/audio/colores/blanco.mp3" type="audio/mp3"></audio>
+	<audio class="amarillo" preload="auto"><source src="../../assets/audio/colores/amarillo.mp3" type="audio/mp3"></audio>
+	<audio class="verde" preload="auto"><source src="../../assets/audio/colores/verde.mp3" type="audio/mp3"></audio>
+	<audio class="azul" preload="auto"><source src="../../assets/audio/colores/azul.mp3" type="audio/mp3"></audio>
+	<audio class="morado" preload="auto"><source src="../../assets/audio/colores/morado.mp3" type="audio/mp3"></audio>
+	<audio class="cafe" preload="auto"><source src="../../assets/audio/colores/cafe.mp3" type="audio/mp3"></audio>
+
+	<audio class="wrong" preload="auto"><source src="../../assets/audio/wrong.mp3" type="audio/mp3"></audio>
+
+    <script src="../../assets/js/colores/memory.js"></script>
+</body>
+</html>

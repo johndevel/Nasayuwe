@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --text-color: #f2f2f2;
+    --text-color-two: #212121;
+    --btn-color: rgb(88,204,2);
+    --btn-color-hover: rgb(97,224,2);
+    --header-color: #235390;
+    --card-hover: rgba(33, 33, 33, .2);
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+/*=============================================
+=                   Banner                    =
+=============================================*/
+header .container {
+    background-color: var(--header-color);
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/header/background.svg');
+}
+header .container .banner {
+    background-image: url('../images/header/header-two.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    height: 100%;
+    width: 1200px;
+    text-align: center;
+    display: table;    
+}
+header .container .banner .info-section {
+    display: table-cell;
+    vertical-align: middle;
+}
+.info-section h1 {
+    font-size: 5rem;
+    line-height: 4rem;
+    -webkit-text-stroke: 2px black;
+}
+.divider-custom {
+    margin: -15px 0 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-custom .divider-custom-line {
+    max-width: 10rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: 10px #2c3e50 !important;
+    height: 0.125rem;
+    width: 100%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.divider-custom .divider-custom-icon {
+    font-size: 2rem;
+    margin: 0 1rem;
+} 
+.info-section .btn, .container .text .btn {
+    color: var(--text-color);
+    background: var(--btn-color);
+    border-radius: 0.625rem;
+    display: inline-block;
+    padding: 0.9375rem 1.875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+.info-section .btn:hover, .container .text .btn:hover {
+    background-color: var(--btn-color-hover);
+}
+.info-section .btn i {
+    color: rgb(230, 230, 230);
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.info-section .btn:hover i {
+    color:rgba(63,61,86, 0.595);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/*========      End of Section Banner     =========*/
+
+
+/*===================================================
+=                   Section Main                    =
+===================================================*/
+main.principal {
+    padding: 3.75rem 0;
+}
+
+main.type {
+    padding-bottom: 5.8rem;
+}
+
+/*=========      End of Section Main     ==========*/
+
+/*===================================================
+=                   Post Section                    =
+===================================================*/
+.post img { 
+    width: 100%;
+}
+.c-card {
+    display: flex;
+    margin: 0 20px 40px;
+}
+.post .card {
+    background-color: #1a1a1ae3;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    max-width: 500px;    
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.post .card-banner {
+    position: relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+.card-banner img {
+    display: block;
+}
+.drop {
+    position: absolute;
+    bottom: 0;
+    padding: 8px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.drop i {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: rgb(230, 230, 230);
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+.drop:hover { 
+    background-color:rgba(0, 0, 0, 0.595);
+}
+.drop i:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.drop:hover i { 
+    color: rgba(204, 204, 204, 0.679);
+}
+.drop i:hover {
+    color: rgb(230, 230, 230);
+}
+.drop-rotate {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.post .drop-active {
+    max-height: var(--max-height);
+}
+.card-descripcion {
+    transition: max-height 0.6s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.6s ease-in-out;
+    -moz-transition: max-height 0.6s ease-in-out;
+    -ms-transition: max-height 0.6s ease-in-out;
+    -o-transition: max-height 0.6s ease-in-out;
+}
+.c-card-descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+.card-descripcion-texto h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #acacac;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #4d4d4d;
+}
+.card-descripcion-texto p {
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: #a1a1a1;
+}
+.explore .btn-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.explore .btn-post a {
+    color: var(--text-color-two);
+    text-decoration: none;
+    padding: 15 30px;
+}
+/*========      End of Section Banner     =========*/
+
+
+/*===================================================
+=                   Modules section                 =
+===================================================*/
+.explore, .modules {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore .container, .modules .container {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;    
+}
+.modules .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+.modules .title .title_text h3 {
+    color: var(--text-color-two);
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 30px 0;
+}
+.modules .title .title_text h2 {
+    color: var(--text-color-two);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 13.2px 0 30px;
+}
+.modules .title .title_text h3 span {
+    color: var(--btn-color);
+    font-size: 2rem;    
+}
+.modules .title .title_text h2 span {
+    color: var(--btn-color);
+    font-size: 4rem;    
+}
+.modules .container .box a:active,
+.modules .container .box a:hover,
+.modules .container .box a:focus
+{
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.modules .container .box {
+    width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    margin: 20px 20px 80px;
+    padding: 15px;
+    box-shadow: 0 0.3125rem 2.1875rem rgba(0, 0, 0, 0.08);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.modules .container .box .img_box{
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.modules .container .box .img_box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.modules .container .box .img_box img:hover {
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+
+.modules .container .btn-post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.modules .container .btn-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.modules .container .btn-post a {
+    color: var(--text-color-two);
+    text-decoration: none;
+    padding: 15 30px;
+}
+
+/*=====    End of Section Modules section    ======*/
+
+
+/*===================================================
+=                       Fotter                      =
+===================================================*/
+.copyright {
+    padding: 1.25rem 2.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyright p {
+    color: var(--text-color-two);
+}
+.copyright a {
+    color: #ff0157;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*=====    End of Section fotter section     ======*/
+
+/*=======================================================
+=                      Breackpoints                     =
+=======================================================*/
+@media (min-width: 992px) and (max-width: 1199.5px) {
+    header .container .banner {
+        width: 90%;
+    }
+}
+@media (max-width: 991.5px) {
+    .modules .container .box {
+        width: 320px;
+        height: 320px;
+    }
+    header .container .banner {
+        width: 90%;
+    }
+    .info-section h1 {
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+    }
+    /* .divider-custom {
+        margin: 1rem 0 1.5rem;
+    } */
+    .divider-custom .divider-custom-line {
+        max-width: 5.7rem;
+    }   
+    .divider-custom .divider-custom-icon {
+        font-size: 1.5rem;
+    }
+    .info-section .btn, .container .text .btn {
+        padding: 10px 15px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 768.5px) {
+    header .container .banner {
+        width: 80%;
+    }
+    .modules .container .box {
+        width: 280px;
+        height: 280px;
+    }
+    .info-section h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    /* .divider-custom {
+        margin: 1.5rem 0 1.8rem;
+    } */
+    .divider-custom .divider-custom-line {
+        max-width: 5.3rem;
+    }
+}
+@media (max-width: 639.5px) {
+    header .container .banner {
+        width: 90%;
+    }
+    .modules .container .box {
+        width: 250px;
+        height: 250px;
+    }
+    .info-section h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    /* .divider-custom {
+        margin: 1rem 0 1.5rem;
+    } */
+    .divider-custom .divider-custom-line {
+        max-width: 4.7rem;
+    }
+}
+@media (max-width: 579.5px) {
+    .modules .container .box {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 480.5px) {
+    .explore .container .post .card-descripcion .card-descripcion-texto h2
+    {
+        font-size: 17px !important;
+        text-align: center;
+    }
+    .explore .container .post .card-descripcion .card-descripcion-texto p
+    {
+        font-size: 13.5px !important;
+        text-align: center;
+    }
+    .info-section h1 {
+        font-size: 3.5rem;
+        line-height: 3.6rem;
+    }
+    .divider-custom .divider-custom-line {
+        max-width: 3.5rem;
+    }
+}
+@media (max-width: 375.5px) {
+    .modules .container .box {
+        width: 280px;
+        height: 280px;
+    }
+    .info-section h1 {
+        font-size: 3.4rem;
+        line-height: 3.5rem;
+    } 
+}
+@media (max-width: 360.5px) {
+    .modules .container .box {
+        width: 250px;
+        height: 250px;
+    }
+    .info-section h1 {
+        font-size: 3.2rem;
+        line-height: 3.5rem;
+    }
+    .divider-custom .divider-custom-line {
+        max-width: 3rem;
+    }   
+}
+@media (max-width: 320.5px) {
+    .info-section h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .modules .container .box {
+        width: 230px;
+        height: 230px;
+    }    
+}
+
+/*=====    End of Section fotter Breackpoints    ======*/

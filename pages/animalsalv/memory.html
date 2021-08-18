@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/animalsalv/memory.css">
+</head>
+<body>
+	<div class="container">
+        <header>
+            <h1>Juego de Memoria - Ew Jii Pwesanxi</h1>
+        </header>
+        <div class="btn-post mb">
+            <a href="../../pages/animalsalv/index.html"><big><big>Atras  <br>E'su</big></big><i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Movimiento(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-redo"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="aguila">
+                <img src="../../assets/images/modules/animalsalv/aguila.png" alt="">
+            </li>
+			<li class="card" type="aguila">
+                <h4>U'h Wala</h4>
+            </li>
+			<li class="card" type="ardilla">
+                <img src="../../assets/images/modules/animalsalv/ardilla.png" alt="">
+            </li>
+			<li class="card" type="ardilla">
+                <h4>Sxuma</h4>
+            </li>
+            <li class="card" type="armadillo">
+                <img src="../../assets/images/modules/animalsalv/armadillo.png" alt="">
+            </li>
+			<li class="card" type="armadillo">
+                <h4>Sxita</h4>
+            </li>
+			<li class="card" type="borugo">
+                <img src="../../assets/images/modules/animalsalv/borugo.png" alt="">
+            </li>
+			<li class="card" type="borugo">
+                <h4>Wawa</h4>
+            </li>
+			<li class="card" type="cosumbo">
+                <img src="../../assets/images/modules/animalsalv/cosumbo.png" alt="">
+            </li>
+			<li class="card" type="cosumbo">
+                <h4>Kãça</h4>
+            </li>
+			<li class="card" type="culebra">
+                <img src="../../assets/images/modules/animalsalv/culebra.png" alt="">
+            </li>
+			<li class="card" type="culebra">
+                <h4>U'l</h4>
+            </li>
+			<!--<li class="card" type="guatin">
+                <img src="../../assets/images/modules/animalsalv/guatin.png" alt="">
+            </li>
+			<li class="card" type="guatin">
+                <h4>Nxu'px</h4>
+            </li>
+			<li class="card" type="oso">
+                <img src="../../assets/images/modules/animalsalv/oso.png" alt="">
+            </li>
+			<li class="card" type="oso">
+                <h4>E'sxavx</h4>
+            </li>-->
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Felicidades.. Ganaste.!! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>Hizo <span id=finalMove> </span> movimientos </p>
+                    <p>en <span id=totalTime> </span> </p>
+                    <p>Clasificación:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de Nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+    </div>
+	<audio class="aguila" preload="auto"><source src="../../assets/audio/animalsalv/aguila.mp3" type="audio/mp3"></audio>
+	<audio class="ardilla" preload="auto"><source src="../../assets/audio/animalsalv/ardilla.mp3" type="audio/mp3"></audio>
+	<audio class="armadillo" preload="auto"><source src="../../assets/audio/animalsalv/armadillo.mp3" type="audio/mp3"></audio>
+	<audio class="borugo" preload="auto"><source src="../../assets/audio/animalsalv/borugo.mp3" type="audio/mp3"></audio>
+	<audio class="cosumbo" preload="auto"><source src="../../assets/audio/animalsalv/cosumbo.mp3" type="audio/mp3"></audio>
+	<audio class="culebra" preload="auto"><source src="../../assets/audio/animalsalv/culebra.mp3" type="audio/mp3"></audio>
+	<!--<audio class="guatin" preload="auto"><source src="../../assets/audio/animalsalv/guatin.mp3" type="audio/mp3"></audio>
+	<audio class="oso" preload="auto"><source src="../../assets/audio/animalsalv/oso.mp3" type="audio/mp3"></audio>-->
+
+	<audio class="wrong" preload="auto"><source src="../../assets/audio/wrong.mp3" type="audio/mp3"></audio>
+
+    <script src="../../assets/js/animalsalv/memory.js"></script>
+</body>
+</html>

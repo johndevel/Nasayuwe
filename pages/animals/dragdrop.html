@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/css/animals/dragdrop.css">
+    <link rel="stylesheet" href="../../assets/css/animals/memory.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="entorno">
+        <h1>Arrastra y suelta - Wẽzxҫxa Miitxhuete</h1>
+        <div class="btn-post mb">
+            <a href="../../pages/animals/index.html"><big><big>Atras  <br>E'su</big></big> <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+
+        <section class="draggable-elements">
+            <div class="row">
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="paloma"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="caballo"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="cuy"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="vaca"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="perro"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="gallina"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="gato"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="gallo"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="pato"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="toro"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="conejo"></i>
+                <i class="draggable" draggable="true" style="color: #4bc0c0;" id="cerdo"></i>
+            </div>
+        </section>
+        <section class="droppable-elements">
+            <div class="row">
+                <div class="droppable" data-draggable-id="perro"><span>Alku</span></div>
+                <div class="droppable" data-draggable-id="cerdo"><span>Kuçxi</span></div>
+                <div class="droppable" data-draggable-id="caballo"><span>Jiba</span></div>
+                <div class="droppable" data-draggable-id="gato"><span>Misx</span></div>
+                <div class="droppable" data-draggable-id="vaca"><span>Klaa U'y</span></div>
+                <div class="droppable" data-draggable-id="toro"><span>Klaapiçthẽ</span></div>
+                <div class="droppable" data-draggable-id="gallina"><span>Atalx U'y</span></div>
+                <div class="droppable" data-draggable-id="gallo"><span>Atalxpihç</span></div>
+                <div class="droppable" data-draggable-id="pato"><span>Yu'ẽs</span></div>
+                <div class="droppable" data-draggable-id="cuy"><span>Fxiç</span></div>
+                <div class="droppable" data-draggable-id="conejo"><span>Kahpx</span></div>
+                <div class="droppable" data-draggable-id="paloma"><span>Tubkwe</span></div>
+            </div>            
+        </section>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Felicitaciones</h2>
+                <a class="close" href=# >x</a>
+                <div class="content-1">
+                    Sorprendente has ganado..! 🎉🎉
+                </div>
+                <div class="content-2">
+                    <img src="../../assets/images/modules/congratulation.png" alt="">
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Jugar de nuevo 😄</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- <input type="text" id="count"/> -->
+        <audio class="perro" preload="auto"><source src="../../assets/audio/animals/perro.mp3" type="audio/mp3"></audio>
+        <audio class="cerdo" preload="auto"><source src="../../assets/audio/animals/cerdo.mp3" type="audio/mp3"></audio>
+        <audio class="caballo" preload="auto"><source src="../../assets/audio/animals/caballo.mp3" type="audio/mp3"></audio>
+        <audio class="gato" preload="auto"><source src="../../assets/audio/animals/gato.mp3" type="audio/mp3"></audio>
+        <audio class="vaca" preload="auto"><source src="../../assets/audio/animals/vaca.mp3" type="audio/mp3"></audio>
+        <audio class="toro" preload="auto"><source src="../../assets/audio/animals/toro.mp3" type="audio/mp3"></audio>
+        <audio class="gallina" preload="auto"><source src="../../assets/audio/animals/gallina.mp3" type="audio/mp3"></audio>
+        <audio class="gallo" preload="auto"><source src="../../assets/audio/animals/gallo.mp3" type="audio/mp3"></audio>
+        <audio class="pato" preload="auto"><source src="../../assets/audio/animals/pato.mp3" type="audio/mp3"></audio>
+        <audio class="cuy" preload="auto"><source src="../../assets/audio/animals/cuy.mp3" type="audio/mp3"></audio>
+        <audio class="conejo" preload="auto"><source src="../../assets/audio/animals/conejo.mp3" type="audio/mp3"></audio>
+        <audio class="paloma" preload="auto"><source src="../../assets/audio/animals/paloma.mp3" type="audio/mp3"></audio>
+
+
+        <audio class="win" preload="auto"><source src="../../assets/audio/win.mp3" type="audio/mp3"></audio>
+        <audio class="wrong" preload="auto"><source src="../../assets/audio/wrong.mp3" type="audio/mp3"></audio>
+        <div class="button">
+            <button id="reload"><big><big>Volver a empezar  <br>Ki' takhya</big></big> </button>
+        </div>
+    </div>
+</div>
+<script src="../../assets/js/animals/dragdrop.js"></script>
+</body>
+</html>

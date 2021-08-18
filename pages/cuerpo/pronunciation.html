@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaYuwe Piyaka</title>
+    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png"/>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/cuerpo/pronunciation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pronunciación - Ksusnxi</h1>
+        <div class="btn-post mb">
+            <a href="../../pages/cuerpo/index.html"><big><big><big><big>Atras  <br>E'su</big></big></big></big><i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+        <div class="popup">
+            <div class="text_container">
+                <h3>Escritura</h3>
+                <p class="idioma">Español: <span id="spanish"></span></p>
+                <p class="idioma">Nasa: <span id="nasa"></span></p>
+            </div>
+            <a href="#" id="close" class="btn_close">X</a>
+        </div>
+        <!--==================================================
+        =                   Audios Section                   =
+        ===================================================-->
+        <audio class="cabello" preload="auto"><source src="../../assets/audio/cuerpo/cabello.mp3" type="audio/mp3"></audio>
+        <audio class="ojos" preload="auto"><source src="../../assets/audio/cuerpo/ojos.mp3" type="audio/mp3"></audio>
+        <audio class="nariz" preload="auto"><source src="../../assets/audio/cuerpo/nariz.mp3" type="audio/mp3"></audio>
+        <audio class="orejas" preload="auto"><source src="../../assets/audio/cuerpo/orejas.mp3" type="audio/mp3"></audio>
+        <audio class="boca" preload="auto"><source src="../../assets/audio/cuerpo/boca.mp3" type="audio/mp3"></audio>
+        <audio class="cuello" preload="auto"><source src="../../assets/audio/cuerpo/cuello.mp3" type="audio/mp3"></audio>
+        <audio class="hombros" preload="auto"><source src="../../assets/audio/cuerpo/hombros.mp3" type="audio/mp3"></audio>
+        <audio class="brazos" preload="auto"><source src="../../assets/audio/cuerpo/brazos.mp3" type="audio/mp3"></audio>
+        <audio class="manos" preload="auto"><source src="../../assets/audio/cuerpo/manos.mp3" type="audio/mp3"></audio>
+        <audio class="piernas" preload="auto"><source src="../../assets/audio/cuerpo/piernas.mp3" type="audio/mp3"></audio>
+        <audio class="pies" preload="auto"><source src="../../assets/audio/cuerpo/pies.mp3" type="audio/mp3"></audio>
+        <!--========    End of Audios Section    =======-->
+        
+        <!--==================================================
+        =                   Map Body Section                   =
+        ===================================================-->
+        <div class="body_img">
+            <img src="../../assets/images/modules/cuerpo/cuerpo.png" usemap="#image-map">
+        </div>
+
+        <map name="image-map">
+            <area onclick=clickaction(this) id="cabello" class="part" target="_self" alt="cabello" title="cabello" coords="174,114,175,132,190,146,204,95,242,64,298,52,358,60,394,82,408,134,413,123,416,82,410,72,421,73,394,50,405,47,375,32,364,30,381,25,355,16,322,18,332,8,307,6,268,23,274,5,239,25,229,38,228,26,212,42,204,58,204,69,182,82,168,96,181,97" shape="poly">
+            <area onclick=clickaction(this) id="ojo" class="part" target="_self" alt="ojo" title="ojo" coords="251,133,20" shape="circle">
+            <area onclick=clickaction(this) id="ojodos" class="part" target="_self" alt="ojo" title="ojo" coords="357,132,20" shape="circle">
+            <area onclick=clickaction(this) id="nariz" class="part" target="_self" alt="nariz" title="nariz" coords="300,149,294,167,313,170,326,167,321,151,311,145" shape="poly">
+            <area onclick=clickaction(this) id="oreja" class="part" target="_self" alt="oreja" title="oreja" coords="176,135,191,151,192,172,180,193,160,191,154,180,147,165,155,142" shape="poly">
+            <area onclick=clickaction(this) id="orejados" class="part" target="_self" alt="oreja" title="oreja" coords="409,129,425,121,439,132,445,156,431,170,423,156,409,140" shape="poly">
+            <area onclick=clickaction(this) id="boca" class="part" target="_self" alt="boca" title="boca" coords="338,247,357,225,368,199,384,181,363,194,341,201,314,204,276,202,238,186,263,214,280,239,303,254" shape="poly">
+            <area onclick=clickaction(this) id="cuello" class="part" target="_self" alt="cuello" title="cuello" coords="295,284,323,288,319,308,312,320,297,305" shape="poly">
+            <area onclick=clickaction(this) id="hombro" class="part" target="_self" alt="hombro" title="hombro" coords="257,322,27" shape="circle">
+            <area onclick=clickaction(this) id="hombrodos" class="part" target="_self" alt="hombro" title="hombro" coords="361,323,29" shape="circle">
+            <area onclick=clickaction(this) id="brazo" class="part" target="_self" alt="brazo" title="brazo" coords="414,341,391,287,505,226,523,246,492,281,454,302" shape="poly">
+            <area onclick=clickaction(this) id="brazodos" class="part" target="_self" alt="brazo" title="brazo" coords="214,291,194,340,130,309,97,267,74,241,69,231,88,213,158,273" shape="poly">
+            <area onclick=clickaction(this) id="mano" class="part" target="_self" alt="mano" title="mano" coords="555,243,581,229,581,215,587,202,581,190,567,175,529,195,519,172,504,179,512,215,536,240" shape="poly">
+            <area onclick=clickaction(this) id="manodos" class="part" target="_self" alt="mano" title="mano" coords="95,168,89,185,83,207,60,225,42,222,27,216,7,205,3,187,9,174,18,167,30,156,47,172,69,183,74,166,88,162" shape="poly">
+            <area onclick=clickaction(this) id="pierna" class="part" target="_self" alt="pierna" title="pierna" coords="241,514,307,553,274,612,259,628,250,671,234,686,212,685,190,670,191,654,201,614,208,581" shape="poly">
+            <area onclick=clickaction(this) id="piernados" class="part" target="_self" alt="pierna" title="pierna" coords="334,555,403,535,422,614,419,634,399,687,386,700,362,685,351,669,347,654,357,625,346,599,339,578" shape="poly">
+            <area onclick=clickaction(this) id="pie" class="part" target="_self" alt="pie" title="pie" coords="170,778,198,774,223,752,248,698,211,705,194,698,168,709,162,756" shape="poly">
+            <area onclick=clickaction(this) id="piedos" class="part" target="_self" alt="pie" title="pie" coords="330,686,327,698,335,737,352,779,382,794,406,778,398,720,366,719" shape="poly">
+        </map>
+        <!--========    End of Map Body Section    =======-->
+    </div>
+    <script src="../../assets/js/cuerpo/pronunciation.js"></script>
+</body>
+</html>

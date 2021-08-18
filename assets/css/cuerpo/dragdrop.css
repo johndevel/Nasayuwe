@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+	background-image: url('../../images/picture-background.svg');
+    font-family: 'Poppins', sans-serif;
+}
+
+/*===================================================
+=                 Containar Section                 =
+===================================================*/
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+.container .entorno {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.container .entorno h1 {
+  font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+.container .entorno .btn-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+.container .entorno .btn-post a {
+  color: var(--text-color-two);
+  text-decoration: none;
+}
+.draggable-elements {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+  .draggable {
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+  }
+  .draggable:hover {
+    opacity: 0.5;
+  }
+  .droppable {
+    height: 6.5rem;
+    width: 6.5rem;
+    margin: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+  }
+  .droppable span {
+    font-size: 1.25rem;
+    pointer-events: none; /* The element is never the target of pointer events */
+  }
+
+#perro {
+    background-image: url('../../images/modules/animals/dragdrop/perro80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cerdo {
+    background-image: url('../../images/modules/animals/dragdrop/cerdo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#caballo {
+    background-image: url('../../images/modules/animals/dragdrop/caballo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#gato {
+    background-image: url('../../images/modules/animals/dragdrop/gato80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#vaca {
+    background-image: url('../../images/modules/animals/dragdrop/vaca80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#toro {
+    background-image: url('../../images/modules/animals/dragdrop/toro80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#gallina {
+    background-image: url('../../images/modules/animals/dragdrop/gallina80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#gallo {
+    background-image: url('../../images/modules/animals/dragdrop/gallo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pato {
+    background-image: url('../../images/modules/animals/dragdrop/pato80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#cuy {
+    background-image: url('../../images/modules/animals/dragdrop/cuy80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#conejo {
+    background-image: url('../../images/modules/animals/dragdrop/conejo80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#paloma {
+    background-image: url('../../images/modules/animals/dragdrop/paloma80x80.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  /* Drag and Drop Related Styling */
+  
+  .droppable.droppable-hover {
+    /* background-color: #bee3f0; */
+    border-width: 5px;
+    transform: scale(1.1);
+  }
+  .droppable.dropped {
+    border-style: solid;
+    color: #fff;
+  }
+  .droppable.dropped span {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+  }
+  .droppable.dropped i {
+    pointer-events: none;
+  }
+  .draggable.dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+  }
+  .draggable.dragged:hover {
+    opacity: 0.1;
+  }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button #reload {
+    margin: 50px 0;
+    padding: 20px;
+}
+/*========    End of Container Section    =========*/
